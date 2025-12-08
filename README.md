@@ -22,7 +22,8 @@ to generate meaningful and geographically contiguous market clusters, helping re
 
 The system leverages SCHC, Gower+HDBSCAN, Spectral, and K-Means, with a predictive Random Forest model to classify new locations.
 
-<img width="544" height="320" alt="image" src="https://github.com/user-attachments/assets/27bd8a9c-9149-4732-afc0-7e2edb4216e3" />
+<img width="653" height="350" alt="image" src="https://github.com/user-attachments/assets/706945aa-9a41-4a71-aa3c-e93310d0d38d" />
+
 
 
 ⚙️ Tech Stack
