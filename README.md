@@ -22,55 +22,8 @@ to generate meaningful and geographically contiguous market clusters, helping re
 
 The system leverages SCHC, Gower+HDBSCAN, Spectral, and K-Means, with a predictive Random Forest model to classify new locations.
 
-🧠 Project Architecture
- ┌──────────────────────────┐
- │  Raw Data Sources        │
- │  • Shop Data             │
- │  • Census Demographics   │
- │  • Pincode Database      │
- └────────────┬─────────────┘
-              │
-              ▼
- ┌──────────────────────────┐
- │  Data Cleaning (QGIS)    │
- │  • Fix Geometries        │
- │  • Spatial Join          │
- │  • Filtering MMR Region  │
- └────────────┬─────────────┘
-              │
-              ▼
- ┌──────────────────────────┐
- │ Feature Engineering       │
- │ • PCA Demographics        │
- │ • Density Metrics         │
- │ • Distance to Hubs        │
- │ • Revenue Normalization   │
- └────────────┬─────────────┘
-              │
-              ▼
- ┌──────────────────────────┐
- │ Hybrid & Standard        │
- │ Clustering Models        │
- │ • SCHC                   │
- │ • Gower+HDBSCAN          │
- │ • Spectral               │
- │ • K-Means                │
- └────────────┬─────────────┘
-              │
-              ▼
- ┌──────────────────────────┐
- │ Cluster Validation        │
- │ • Silhouette Score        │
- │ • DB Index                │
- │ • CH Index                │
- │ • GeoSpatial Validation   │
- └────────────┬─────────────┘
-              │
-              ▼
- ┌──────────────────────────┐
- │ Market Segment Predictor  │
- │ RandomForestClassifier    │
- └──────────────────────────┘
+<img width="544" height="320" alt="image" src="https://github.com/user-attachments/assets/27bd8a9c-9149-4732-afc0-7e2edb4216e3" />
+
 
 ⚙️ Tech Stack
 Languages & Frameworks
